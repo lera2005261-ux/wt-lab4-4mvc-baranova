@@ -6,6 +6,7 @@ System.Globalization.CultureInfo.DefaultThreadCurrentUICulture = culture;
 var builder = WebApplication.CreateBuilder(args);
 //коммит
 //коммит
+//коммит
 
 builder.Services.AddControllersWithViews(options =>
 {
