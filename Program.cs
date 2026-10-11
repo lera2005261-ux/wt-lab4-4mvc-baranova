@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 //коммит
 //коммит
 //коммит
+//коммит
 
 builder.Services.AddControllersWithViews(options =>
 {
