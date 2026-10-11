@@ -4,6 +4,7 @@ System.Globalization.CultureInfo.DefaultThreadCurrentCulture = culture;
 System.Globalization.CultureInfo.DefaultThreadCurrentUICulture = culture;
 
 var builder = WebApplication.CreateBuilder(args);
+//коммит
 
 builder.Services.AddControllersWithViews(options =>
 {
