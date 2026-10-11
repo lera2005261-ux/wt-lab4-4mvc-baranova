@@ -9,7 +9,7 @@ https://github.com/lera2005261-ux/wt-lab4-4mvc-baranova
 
 ## Опубликованное приложение
 
-https://ИМЯ-ПРИЛОЖЕНИЯ.onrender.com
+https://wt-lab4-4mvc-baranova.onrender.com/
 
 ## Возможности
 
