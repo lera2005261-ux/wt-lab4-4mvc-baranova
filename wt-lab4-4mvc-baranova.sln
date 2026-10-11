@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wt-lab4-4mvc-baranova", "wt-lab4-4mvc-baranova.csproj", "{A20BB3AB-C8B8-4990-9C3C-91EF0C04B43F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A20BB3AB-C8B8-4990-9C3C-91EF0C04B43F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A20BB3AB-C8B8-4990-9C3C-91EF0C04B43F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A20BB3AB-C8B8-4990-9C3C-91EF0C04B43F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A20BB3AB-C8B8-4990-9C3C-91EF0C04B43F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77EEEA0A-F687-451C-BE72-ACE5329209BC}
+	EndGlobalSection
+EndGlobal

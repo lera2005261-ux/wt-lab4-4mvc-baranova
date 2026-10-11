@@ -1,0 +1,59 @@
+:root {
+    --brand-1: #4f46e5;
+    --brand-2: #06b6d4;
+}
+
+body {
+    background-color: #f5f7fb;
+}
+
+.app-navbar {
+    background: linear-gradient(90deg, var(--brand-1), var(--brand-2));
+}
+
+.app-navbar .nav-link {
+    opacity: .9;
+    transition: opacity .2s ease;
+}
+
+.app-navbar .nav-link:hover {
+    opacity: 1;
+}
+
+.app-footer {
+    background-color: #1f2937;
+    color: #cbd5e1;
+}
+
+.hero {
+    background: linear-gradient(120deg, var(--brand-1), var(--brand-2));
+    color: #fff;
+}
+
+.hero-img {
+    max-height: 260px;
+}
+
+.product-card,
+.feature-card {
+    border: 0;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.product-card:hover,
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .75rem 1.5rem rgba(79, 70, 229, .18) !important;
+}
+
+.feature-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    font-size: 1.6rem;
+    color: #fff;
+    background: linear-gradient(135deg, var(--brand-1), var(--brand-2));
+}

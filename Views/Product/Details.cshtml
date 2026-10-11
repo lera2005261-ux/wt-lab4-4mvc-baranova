@@ -1,0 +1,59 @@
+@model Product
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<div class="row justify-content-center">
+    <div class="col-12 col-md-10 col-lg-8">
+        <div class="card shadow rounded-4">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                    <div>
+                        <span class="badge bg-secondary mb-2">ID: @Model.Id</span>
+                        <h2 class="fw-bold mb-0">@Model.Name</h2>
+                    </div>
+                    @if (Model.IsAvailable)
+                    {
+                        <span class="badge bg-success fs-6">В наличии</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger fs-6">Нет в наличии</span>
+                    }
+                </div>
+
+                <dl class="row mb-4">
+                    <dt class="col-sm-4">Идентификатор</dt>
+                    <dd class="col-sm-8">@Model.Id</dd>
+
+                    <dt class="col-sm-4">Название</dt>
+                    <dd class="col-sm-8">@Model.Name</dd>
+
+                    <dt class="col-sm-4">Категория</dt>
+                    <dd class="col-sm-8">@Model.Category</dd>
+
+                    <dt class="col-sm-4">Цена</dt>
+                    <dd class="col-sm-8 fs-4 fw-bold">@Model.Price.ToString("0.##") руб.</dd>
+
+                    <dt class="col-sm-4">Статус</dt>
+                    <dd class="col-sm-8">@(Model.IsAvailable ? "Товар в наличии" : "Товара нет в наличии")</dd>
+                </dl>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left"></i> Назад к списку
+                    </a>
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-outline-primary">
+                        <i class="bi bi-pencil"></i> Изменить
+                    </a>
+                    <form asp-action="Delete" asp-route-id="@Model.Id" method="post"
+                          onsubmit="return confirm('Удалить этот товар?');">
+                        <button type="submit" class="btn btn-outline-danger">
+                            <i class="bi bi-trash"></i> Удалить
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

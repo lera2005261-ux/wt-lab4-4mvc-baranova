@@ -1,0 +1,55 @@
+@{
+    ViewData["Title"] = "Главная";
+}
+
+<section class="hero rounded-4 shadow p-4 p-md-5 mb-5">
+    <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-7">
+            <span class="badge bg-light text-primary rounded-pill mb-3">WT-4 · ASP.NET Core MVC</span>
+            <h1 class="display-5 fw-bold">Система управления товарами</h1>
+            <p class="lead mb-4">
+                Веб-приложение интернет-магазина электроники: просматривайте каталог,
+                добавляйте новые товары, редактируйте и удаляйте существующие.
+            </p>
+            <a asp-controller="Product" asp-action="Index" class="btn btn-light btn-lg shadow-sm me-2">
+                <i class="bi bi-arrow-right-circle me-1"></i> Перейти к товарам
+            </a>
+            <a asp-controller="Product" asp-action="Create" class="btn btn-outline-light btn-lg">
+                Добавить товар
+            </a>
+        </div>
+        <div class="col-12 col-lg-5 text-center">
+            <img src="~/images/hero.svg" alt="Интернет-магазин электроники" class="img-fluid hero-img" />
+        </div>
+    </div>
+</section>
+
+<div class="row g-4">
+    <div class="col-12 col-md-4">
+        <div class="card feature-card h-100 shadow-sm rounded-4">
+            <div class="card-body">
+                <div class="feature-icon mb-3"><i class="bi bi-grid-3x3-gap"></i></div>
+                <h5 class="card-title">Каталог</h5>
+                <p class="card-text text-muted">Адаптивная сетка карточек с ценой, категорией и статусом наличия.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-4">
+        <div class="card feature-card h-100 shadow-sm rounded-4">
+            <div class="card-body">
+                <div class="feature-icon mb-3"><i class="bi bi-plus-square"></i></div>
+                <h5 class="card-title">Добавление</h5>
+                <p class="card-text text-muted">Форма с проверкой данных: сообщения об ошибках показываются сразу.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-4">
+        <div class="card feature-card h-100 shadow-sm rounded-4">
+            <div class="card-body">
+                <div class="feature-icon mb-3"><i class="bi bi-pencil-square"></i></div>
+                <h5 class="card-title">Редактирование</h5>
+                <p class="card-text text-muted">Изменение и удаление товаров, возврат к списку после операции.</p>
+            </div>
+        </div>
+    </div>
+</div>
